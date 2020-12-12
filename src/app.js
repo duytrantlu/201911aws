@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use("/api", routes);
 
-const message = "Server is runing on port";
+const message = "Máy chủ đang chạy ở cổng";
 
 const port = process.env.NODE_PORT || 4000;
 http.createServer(app)
