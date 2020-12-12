@@ -30,6 +30,10 @@ router.post('/index', (req, res) => {
         age: 27
     };
     res.status(200).json(user);
-})
+});
+
+router.post('/cherry-pcik', (req, res) => {
+    res.status(200).send("my responsible is test cherry pick");
+});
 
 module.exports = router;
