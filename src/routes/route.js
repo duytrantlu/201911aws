@@ -24,4 +24,12 @@ router.post("/upload", upload.single("file"), function(req, res) {
     })
 });
 
+router.post('/index', (req, res) => {
+    const user = {
+        name: "Duy",
+        age: 27
+    };
+    res.status(200).json(user);
+})
+
 module.exports = router;
