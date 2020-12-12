@@ -30,12 +30,6 @@ router.post('/index', (req, res) => {
         age: 27
     };
     res.status(200).json(user);
-});
-
-router.get('/home', (req, res)=> {
-    res.send.json({
-        food: "Pizza"
-    });
 })
 
 module.exports = router;
